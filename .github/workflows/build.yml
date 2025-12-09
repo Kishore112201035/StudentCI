@@ -18,7 +18,7 @@ jobs:
       run: sudo apt-get update && sudo apt-get install g++ -y
 
     - name: Compile Test Program
-      run: g++ 1.cpp main.cpp test.cpp -o test_program
+      run: g++ student.cpp main.cpp test.cpp -o test_program
 
     - name: Run Test Program
       run: ./test_program
