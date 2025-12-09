@@ -17,8 +17,16 @@ jobs:
     - name: Install g++
       run: sudo apt-get update && sudo apt-get install g++ -y
 
+    # Compile and run the main program
+    - name: Compile Main Program
+      run: g++ main.cpp student.cpp -o my_program
+
+    - name: Run Main Program
+      run: ./my_program
+
+    # Compile and run the test program separately
     - name: Compile Test Program
-      run: g++ 1.cpp main.cpp test.cpp -o test_program
+      run: g++ test.cpp student.cpp -o test_program
 
     - name: Run Test Program
       run: ./test_program
