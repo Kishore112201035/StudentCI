@@ -19,14 +19,14 @@ jobs:
 
     # Compile and run the main program
     - name: Compile Main Program
-      run: g++ main.cpp student.cpp -o my_program
+      run: g++ main.cpp 1.cpp -o my_program
 
     - name: Run Main Program
       run: ./my_program
 
     # Compile and run the test program separately
     - name: Compile Test Program
-      run: g++ test.cpp student.cpp -o test_program
+      run: g++ test.cpp 1.cpp -o test_program
 
     - name: Run Test Program
       run: ./test_program
